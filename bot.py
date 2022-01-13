@@ -46,7 +46,7 @@ async def song(_, message):
     user_name = message.from_user.first_name
     shed = await message.reply("🔎 Finding the Song...")
     opts = {
-        "format": "bestaudio",
+        "format": "bestaudio/best",
         "addmetadata": True,
         "key": "FFmpegMetadata",
         "writethumbnail": True,
